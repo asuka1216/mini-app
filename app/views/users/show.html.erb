@@ -1,0 +1,7 @@
+<div class="contents row" >
+  <b><%= @nickname %>'s post list</b>
+  <% @messages.each do |message| %>
+    <%= simple_format(message.text) %>
+  <% end %>
+  <%= paginate(@messages) %>
+</div>

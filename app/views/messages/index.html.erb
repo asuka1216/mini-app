@@ -1,6 +1,6 @@
 <div class="contents row" >
-  <% @messages.each do |message| %>
-     <%= simple_format(message.text) %>
-    </div>
+   <% @messages.each do |message| %>
+    <%= simple_format(message.text) %>
   <% end %>
+  <%= paginate(@messages) %>
 </div>
