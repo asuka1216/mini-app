@@ -262,13 +262,13 @@ form {
   }
   input[type="submit"] {
     @extend .transition;
-    background-color: $accent;
+    background-color: #fff;
     border-radius: 20px;
-    color: #fff;
+    color: $accent;
     border: 0;
     font-size: 18px;
     &:hover {
-      background-color: lighten($accent, 10%);
+      background-color: lighten(lightgreen, 10%);
     }
   }
 }
